@@ -1,11 +1,12 @@
 import React from "react";
 import styles from '../page.module.css';
+import '../global.css';
 
 function Main() {
     return(
         <div className="main">
             <div className="homeButtons">
-                <button>All</button>
+                <button className="active">All</button>
                 <button>Music</button>
                 <button>Podcasts</button>
                 <button>Audiobooks</button>
@@ -22,6 +23,7 @@ function Main() {
                 <button>Sublime</button>
             </div>
 
+            <h1>Your shows</h1>
             <div className="yourShows">
                 <button>The Adam Friedland Show Podcast</button>
                 <button>The Tim Dillon Show</button>
@@ -30,6 +32,8 @@ function Main() {
                 <button>Soder</button>
             </div>
 
+            <p>Made For</p>
+            <h1>elijahgott_</h1>
             <div className="madeFor">
                 <button>Discover Weekly</button>
                 <button>Daily Mix 01</button>

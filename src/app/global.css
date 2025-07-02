@@ -1,8 +1,77 @@
-html{
-    background-color: black;
+*{
+    --bg-color: rgb(18, 18, 18);
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
 }
 
-main, body{
-    --bg-color: rgb(18, 18, 18);
+.main{
+    border: 2px solid red;
     background-color: var(--bg-color);
+    padding-left: 16px;
+    padding-right: 16px;;
+}
+
+.homeButtons, .recentButtons, .yourShows, .madeFor{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.homeButtons button{
+    background-color: rgb(55, 55, 55);
+    color: white;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    border-radius: 16px;
+    margin: 4px;
+}
+
+.homeButtons button.active{
+    background-color: white;
+    color: var(--bg-color)
+}
+
+.homeButtons button:not(.active):hover{
+    background-color: rgb(65, 65, 65);
+}
+
+.recentButtons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.recentButtons button{
+    width: 240px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(55, 55, 55);
+    border: none;
+    border-radius: 4px;
+}
+
+.recentButtons button:hover{
+    background-color: rgb(65, 65, 65);
+}
+
+.yourShows, .madeFor{
+    display: flex;
+}
+
+.yourShows button, .madeFor button{
+    width: 180px;
+    height: 256px;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.yourShows button:hover, .madeFor button:hover{
+    background-color: rgb(55, 55, 55);
 }

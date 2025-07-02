@@ -7,7 +7,7 @@ import Main from "./_components/Main.jsx"
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Main className={styles.main}/>
+      <Main />
     </div>
   );
 }
