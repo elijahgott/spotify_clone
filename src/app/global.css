@@ -47,7 +47,8 @@
 }
 
 .recentButtons button{
-    width: 240px;
+    width: 15%;
+    min-width: 240px;
     height: 64px;
     font-size: 20px;
     font-weight: bold;
