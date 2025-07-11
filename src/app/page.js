@@ -1,13 +1,13 @@
 // npm run dev
-import Image from "next/image";
-import styles from "./page.module.css";
-import './global.css';
+import styles from './page.module.css'
 
 import Main from "./_components/Main.jsx"
+import LeftMenu from "./_components/LeftMenu";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <LeftMenu className={styles.leftMenu}/>
       <Main />
     </div>
   );
