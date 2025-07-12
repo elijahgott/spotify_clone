@@ -12,7 +12,9 @@ function NowPlaying(){
                 <p className='subtitle' style={{position: "absolute", zIndex: 100,  bottom: "16px", left: "16px", fontSize: "16px"}}>Sublime</p>
             </div>
             <div style={{display: "flex", flexDirection: "column", marginTop: "24px", marginBottom: "12px"}}>
-                {/*  */}
+                {/* About the artist */}
+                {/* Credits */}
+                {/* On tour */}
             </div>
         </div>
     )
