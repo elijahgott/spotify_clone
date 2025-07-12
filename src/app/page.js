@@ -2,13 +2,15 @@
 import styles from './page.module.css'
 
 import Main from "./_components/Main.jsx"
-import LeftMenu from "./_components/LeftMenu";
+import LibraryMenu from "./_components/LibraryMenu";
+import NowPlaying from './_components/NowPlaying';
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <LeftMenu />
+      <LibraryMenu />
       <Main />
+      <NowPlaying />
     </div>
   );
 }

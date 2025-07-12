@@ -1,0 +1,8 @@
+.bgFade{
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0.2) 30%, rgba(18, 18, 18, 1) 45%);
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100dvh;
+}
+

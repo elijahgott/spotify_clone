@@ -1,15 +1,13 @@
-'use client'
-
 import React from "react";
-import styles from './LeftMenu.module.css';
+import styles from './LibraryMenu.module.css';
 
-function LeftMenu() {
+function LibraryMenu() {
 
     return(
-        <div style={{backgroundColor: "rgb(18, 18, 18)", width: "20%", height: "100dvh", paddingLeft: "16px", paddingRight: "16px", borderRadius: "8px", margin: "8px", marginRight: "4px"}}>
-            <div style={{display: "flex", Items: "baseline", marginTop: "20px"}}>
+        <div style={{backgroundColor: "rgb(18, 18, 18)", width: "20%", height: "100dvh", minWidth: "250px", maxWidth: "400px",paddingLeft: "16px", paddingRight: "16px", borderRadius: "8px", margin: "8px", marginRight: "4px"}}>
+            <div style={{display: "flex", marginTop: "24px", marginBottom: "12px"}}>
                 <h1 style={{color: "white"}}>Your Library</h1>
-                <button className="pill-button" style={{marginRight: "0", marginLeft: "auto", marginTop: "-8px"}}>+ Create</button>
+                <button className="pill-button" style={{marginRight: "0", marginLeft: "auto", marginTop: "-12px"}}>+ Create</button>
             </div>
 
             <div className={styles.categories}>
@@ -30,7 +28,7 @@ function LeftMenu() {
 
             <div>
                 <button className={styles.libraryButton}>
-                    <div style={{width: "16%", borderRadius: "4px", margin: "8px"}}>
+                    <div style={{width: "16%", minWidth: "50px",borderRadius: "4px", margin: "8px"}}>
                         <img src="https://placehold.co/100x100"></img>
                     </div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
@@ -39,7 +37,7 @@ function LeftMenu() {
                     </div>
                 </button>
                 <button className={styles.libraryButton}>
-                    <div style={{width: "16%", borderRadius: "4px", margin: "8px"}}>
+                    <div style={{width: "16%", minWidth: "50px", borderRadius: "4px", margin: "8px"}}>
                         <img src="https://placehold.co/100x100"></img>
                     </div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
@@ -50,7 +48,7 @@ function LeftMenu() {
 
 
                 <button className={styles.libraryButton}>
-                    <div style={{width: "16%", borderRadius: "4px", margin: "8px"}}>
+                    <div style={{width: "16%", minWidth: "50px", borderRadius: "4px", margin: "8px"}}>
                         <img src="https://placehold.co/100x100"></img>
                     </div>
                     <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
@@ -63,4 +61,4 @@ function LeftMenu() {
     )
 }
 
-export default LeftMenu;
+export default LibraryMenu;
