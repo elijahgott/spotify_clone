@@ -1,16 +1,24 @@
 /* Elijah Gott */
 /* Styles for main component of page */
 
+/* SHOULD BE IN GLOBAL */
+/* - background color
+   - button / button hover
+   - font stuff
+   - sections
+*/
+
 *{
     --bg-color: rgb(18, 18, 18);
     --text-color: rgb(249, 249, 249);
     --subtitle-text-color: rgb(175, 175, 175);
 
     --btn-color: rgb(55, 55, 55);
-    --btn-highlight-color: rgb(65, 65, 65);
+    --btn-highlight-color: rgb(42, 42, 42);
 
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    letter-spacing: 0.2px;
 
     margin: 0;
     padding: 0;
@@ -30,18 +38,22 @@ html{
     padding-right: 16px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .homeButtons{
     margin-top: 16px;
     margin-bottom: 16px;
     margin-left: 0.5%;
 }
 
-.homeButtons button{
+.pill-button{
     background-color: var(--btn-color);
     color: var(--text-color);
     font-size: 16px;
     font-weight: bold;
-    padding-top: 8px;
+    padding-top: 10px;
     padding-bottom: 8px;
     padding-left: 12px;
     padding-right: 12px;
@@ -50,19 +62,19 @@ html{
     margin: 4px;
 }
 
-.homeButtons button.active{
+.pill-button.active{
     background-color: var(--text-color);
     color: var(--bg-color)
 }
 
-.homeButtons button:not(.active):hover{
-    background-color: var(--btn-highlight-color);
+.pill-button:not(.active):hover{
+    background-color: rgb(65, 65, 65);
 }
 
 .title{
     margin-left: 1%;
-    margin-bottom: -12px;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .subtitle{
@@ -99,7 +111,7 @@ html{
 }
 
 .recentButtons button:hover{
-    background-color: var(--btn-highlight-color);
+    background-color: rgb(65, 65, 65);
 }
 
 .recentButtons img{
@@ -132,7 +144,7 @@ html{
 }
 
 .yourShows button:hover, .madeFor button:hover{
-    background-color: rgb(55, 55, 55);
+    background-color: var(--btn-highlight-color);
 }
 
 .yourShows img, .madeFor img{
@@ -142,7 +154,7 @@ html{
     border-radius: 8px;
 }
 
-.yourShows a:hover, .madeFor a:hover{
+.yourShows a:hover, .madeFor a:hover, a:hover{
     text-decoration: underline;
 }
 

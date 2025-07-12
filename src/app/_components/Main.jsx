@@ -5,10 +5,10 @@ function Main() {
     return(
         <div className="main">
             <div className="homeButtons">
-                <button className="active">All</button>
-                <button>Music</button>
-                <button>Podcasts</button>
-                <button>Audiobooks</button>
+                <button className="pill-button active">All</button>
+                <button className="pill-button">Music</button>
+                <button className="pill-button">Podcasts</button>
+                <button className="pill-button">Audiobooks</button>
             </div>
 
             <div className="section recentButtons">
@@ -47,7 +47,7 @@ function Main() {
 
             </div>
 
-            <h1 className="title">Your shows</h1>
+            <a className="title">Your shows</a>
             <div className="section yourShows">
                 <button>
                     <img src="https://placehold.co/400x400"></img>
@@ -77,7 +77,7 @@ function Main() {
             </div>
 
             <p className="subtitle">Made For</p>
-            <h1 className="title">elijahgott_</h1>
+            <a className="title">elijahgott_</a>
             <div className="section madeFor">
                 <button>
                     <img src="https://placehold.co/400x400"></img>

@@ -7,7 +7,7 @@ import LeftMenu from "./_components/LeftMenu";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <LeftMenu className={styles.leftMenu}/>
+      <LeftMenu />
       <Main />
     </div>
   );
